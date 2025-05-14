@@ -21,8 +21,8 @@ services:
     #       ignore: 
     #         - node_modules
     environment:
-      GITHUB_CLIENT_ID: Ov23likcOj6B4a3kvPKn
-      GITHUB_CLIENT_SECRET: 6ecc0da9d2a5487f7741292f65ef90b147922319
+      GITHUB_CLIENT_ID: # Your Github OAuth client id
+      GITHUB_CLIENT_SECRET: # Your Github OAuth client secret
       MONGO_URI: "mongodb://database:27017/trivia-app"
       FRONTEND_URL: "http://localhost:5173"
       
