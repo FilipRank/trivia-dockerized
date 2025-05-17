@@ -4,6 +4,8 @@ services:
     container_name: database_container
     ports: 
       - "27017:21017"
+    environment:
+      BACKEND_URL:
 
   backend:
     build: https://github.com/filiprank/trivia-backend.git
