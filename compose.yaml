@@ -8,7 +8,7 @@ services:
       BACKEND_URL:
 
   backend:
-    build: https://github.com/filiprank/trivia-backend.git
+    build: https://github.com/filiprank/trivia-backend.git#deployment-testing
     # build: ./trivia-backend
     container_name: backend_container
     ports:
@@ -30,7 +30,7 @@ services:
       BACKEND_URL: "http://localhost:4000"
       
   frontend:
-    build: https://github.com/filiprank/trivia-frontend.git
+    build: https://github.com/filiprank/trivia-frontend.git#deployment-testing
     # build: ./trivia-frontend
     container_name: frontend_container
     ports:
