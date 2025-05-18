@@ -27,6 +27,7 @@ services:
       GITHUB_CLIENT_SECRET: # Your Github OAuth client secret
       MONGO_URI: "mongodb://database:27017/trivia-app"
       FRONTEND_URL: "http://localhost:5173"
+      BACKEND_URL: "http://localhost:4000"
       
   frontend:
     build: https://github.com/filiprank/trivia-frontend.git
@@ -36,6 +37,8 @@ services:
       - "5173:5173"
     stdin_open: true
     tty: true
+    environment:
+      VITE_BACKEND_URL: "http://localhost:4000"
     # develop:
     #   watch:
     #     - action: sync
